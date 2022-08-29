@@ -15,8 +15,9 @@ function selectDeck (n) {   // при нажатии на карту Древн�
     highlightAncient(n);
     setAncientData(n);
     difficultyLevel.style.display = 'block';
-    shirt.classList.add('deactivated');
     flippedCard.style.display = 'none';
+    shirt.style.display = 'none';
+    currentDeckState.style.display = 'none';
 }
 
 function setAncient (n) {   // назначаем Древнего

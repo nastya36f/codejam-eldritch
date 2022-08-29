@@ -46,9 +46,14 @@ body {
     background-color: green;
 }
 
+.wrapper {
+    display: flex;
+    margin-top: 100px;
+}
 .current_deck_state {
     display: none;
     margin-left: 100px;
+    margin-right: 100px;
 }
 
 .current_deck_state h2{
@@ -71,22 +76,19 @@ body {
 }
 
 .cards {
-    position: relative;
+    display: flex;
 }
 
 .shirt {
     display: none;
-    position: absolute;
-    right: 500px;
-    top: -150px;
+    margin-right: 100px;
+
 }
 
 .flipped_card img {
     display: none;
     height: 250px;
-    position: absolute;
-    right: 200px;
-    top: -150px;
+
 }
 .deactivated {
     display: none;

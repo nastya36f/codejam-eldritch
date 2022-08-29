@@ -12,8 +12,6 @@ let currentDeckState = document.querySelector('.current_deck_state');
 
 function getDeck() {
     counter = setAncientData(cardNumber);
-
-
     let deck = finishDeck(counter, reducedDeck);
    
     let stack1 = [].concat(deck[0].splice(0, counter[1][0]), deck[1].splice(0, counter[1][1]), deck[2].splice(0, counter[1][2]));
@@ -21,9 +19,10 @@ function getDeck() {
     let stack3 = [].concat(deck[0].splice(0, counter[3][0]), deck[1].splice(0, counter[3][1]), deck[2].splice(0, counter[3][2]));
 
     finalDeckStack = [].concat(mixArray(stack3), mixArray(stack2), mixArray(stack1));
-    shirt.classList.add('dis_block');
+    
     getCurrentCounter ();
     currentDeckState.style.display = 'block';
+    shirt.style.display = 'block';
 }
 
 function finishDeck(count, redDeck) {

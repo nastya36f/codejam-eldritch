@@ -1,4 +1,4 @@
-import {finalDeckStack, cards} from "./getDeck.js";
+import {finalDeckStack} from "./getDeck.js";
 import {counter} from "./getDeck.js";
 
 let shirt = document.querySelector('.shirt');

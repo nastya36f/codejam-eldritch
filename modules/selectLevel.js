@@ -12,9 +12,8 @@ function selectLevel (lev) {   // при нажатии на уровень
     highlightLevel(lev);        // -выделяем выбранный уровень
     reducedDeck = formStartDeck(lev);         // - создаем черновой маcсив маcсивов
     shuffleBtn.style.display = 'block';
-    shirt.style.display = 'none';
-    currentDeckState.style.display = 'none';
-    flippedCard.style.display = 'none';
+    shirt.classList.toggle('deactivated');
+    currentDeckState.classList.toggle('deactivated');
 }
 
 function highlightLevel(lev) {  // выделяем выбранный уровень

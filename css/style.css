@@ -91,3 +91,7 @@ body {
 .deactivated {
     display: none;
 }
+
+.dis_block {
+    display: block;
+}

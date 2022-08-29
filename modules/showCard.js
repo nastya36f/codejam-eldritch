@@ -97,7 +97,8 @@ function getFlippedCard(elem){
 }
     
 function noCards() {
-    cards.style.display = 'none';
+    shirt.classList.add('deactivated');
+    flippedCard.style.display = 'none';
 }
 
 export {shirt, showCard, getCurrentCounter, flippedCard}

@@ -21,7 +21,7 @@ function getDeck() {
     let stack3 = [].concat(deck[0].splice(0, counter[3][0]), deck[1].splice(0, counter[3][1]), deck[2].splice(0, counter[3][2]));
 
     finalDeckStack = [].concat(mixArray(stack3), mixArray(stack2), mixArray(stack1));
-    shirt.style.display = 'block';
+    shirt.classList.add('dis_block');
     getCurrentCounter ();
     currentDeckState.style.display = 'block';
 }
